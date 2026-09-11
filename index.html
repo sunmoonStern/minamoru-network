@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>見守る会ネットワーク | 地方議会を、みんなの目で</title>
+<meta name="description" content="各地の「区議会・市議会を見守る会」のLINEオープンチャットへのリンク集です。">
+
+<!--
+  ▼ メンテナンス用メモ（公開前に必ず確認してください）▼
+
+  1. 各グループの <a class="join" href="…"> のURLを、実際のLINEオープンチャットの
+     招待URL（https://line.me/ti/g2/… の形式）に書き換えてください。
+     QRコードはこのURLから自動生成されるので、href を直すだけで両方が更新されます。
+
+  2. 新しい区・市を追加したい場合は、<article class="chapter">…</article> の
+     ブロックをひとつ複製して、badge の文字・見出し・説明文・href を書き換えてください。
+
+  3. できあがったら、このファイルを index.html としてGitHubリポジトリのルートに置き、
+     Settings → Pages → Branch を選んで公開すれば完了です。
+-->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap');
+
+  :root{
+    --paper: #EEE8DA;
+    --paper-light: #F7F1E4;
+    --ink: #1E2A3A;
+    --ink-soft: #4A5568;
+    --gold: #B8862E;
+    --green: #4B6B4F;
+    --rule: #CFC6B0;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html{ -webkit-text-size-adjust: 100%; }
+
+  body{
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Zen Kaku Gothic New', 'Hiragino Sans', sans-serif;
+    line-height: 1.8;
+  }
+
+  a{ color: inherit; }
+
+  .wrap{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  /* ---- hero ---- */
+
+  .hero{
+    margin-bottom: 56px;
+  }
+
+  .seal{
+    width: 84px;
+    height: 84px;
+    margin-bottom: 28px;
+  }
+
+  .seal svg{
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+    transform: rotate(-6deg);
+  }
+
+  @media (prefers-reduced-motion: no-preference){
+    .seal svg{
+      animation: stamp 0.5s cubic-bezier(.2,1.4,.4,1) both;
+    }
+  }
+
+  @keyframes stamp{
+    0%{ transform: rotate(-6deg) scale(1.9); opacity: 0; }
+    100%{ transform: rotate(-6deg) scale(1); opacity: 1; }
+  }
+
+  h1{
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: 800;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    margin: 0 0 12px;
+    letter-spacing: 0.02em;
+  }
+
+  .subhead{
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    margin: 0 0 28px;
+  }
+
+  .lede{
+    max-width: 34em;
+    font-size: 0.98rem;
+    color: var(--ink-soft);
+  }
+
+  /* ---- chapters ---- */
+
+  .chapters{
+    border-top: 1px solid var(--rule);
+  }
+
+  .chapter{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 36px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .badge{
+    flex: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--ink);
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+  }
+
+  .chapter-body{
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .chapter-body h2{
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: 800;
+    font-size: 1.15rem;
+    margin: 0 0 10px;
+  }
+
+  .join{
+    margin-top: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
+  .join svg{ flex: none; width: 16px; height: 16px; }
+
+  .qr{
+    flex: none;
+    width: 96px;
+  }
+
+  .qr img{
+    width: 96px;
+    height: 96px;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid var(--rule);
+    background: var(--paper-light);
+  }
+
+  a:focus-visible, .join:focus-visible{
+    outline: 2px solid var(--green);
+    outline-offset: 3px;
+  }
+
+  /* ---- footer ---- */
+
+  footer{
+    margin-top: 48px;
+  }
+
+  footer p{
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    max-width: 34em;
+  }
+
+  footer .call{
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--ink);
+  }
+
+  footer .note{
+    padding: 12px 16px;
+    background: var(--paper-light);
+    border-left: 3px solid var(--gold);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 520px){
+    .wrap{ padding: 48px 18px 72px; }
+    .chapter{ flex-wrap: wrap; }
+    .qr{ order: 3; width: 84px; margin-left: 76px; margin-top: -4px; }
+    .qr img{ width: 84px; height: 84px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="seal" aria-hidden="true">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#B8862E" stroke-width="3"/>
+        <circle cx="50" cy="50" r="38" fill="none" stroke="#B8862E" stroke-width="1.5"/>
+        <text x="50" y="63" text-anchor="middle" font-family="'Shippori Mincho B1', serif" font-weight="800" font-size="42" fill="#B8862E">見</text>
+      </svg>
+    </div>
+
+    <h1>見守る会ネットワーク</h1>
+    <p class="subhead">地方議会を、みんなの目で。</p>
+
+    <p class="lede">
+      2023年、文京区の区民有志が「政治の話をしにくい」という違和感をきっかけに、区議会の話題を気軽に話せるLINEのオープンチャット「文京区議会を見守る会」を立ち上げました。特定の政党や候補を支援せず、誹謗中傷を避けるという方針のもとで参加者が増え、2025年には民主主義大賞の市民部門優秀賞に選ばれています。同じような場をつくりたいという声を受け、各地の「見守る会」をこのページにまとめました。
+    </p>
+  </header>
+
+  <section class="chapters">
+
+    <article class="chapter">
+      <div class="badge" aria-hidden="true">文</div>
+      <div class="chapter-body">
+        <h2>文京区議会を見守る会</h2>
+        <a class="join" href="https://line.me/ti/g2/uX19xiIbh3sgjLRc8Ievl3OVMEF34c_DTmSJSw" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v9H8l-4 4V6z"/></svg>
+          オープンチャットに参加する
+        </a>
+      </div>
+      <div class="qr"><img alt="文京区議会を見守る会のQRコード"></div>
+    </article>
+
+    <article class="chapter">
+      <div class="badge" aria-hidden="true">さ</div>
+      <div class="chapter-body">
+        <h2>さいたま市議会を見守る会</h2>
+        <a class="join" href="https://line.me/ti/g2/DUMMY-saitama" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v9H8l-4 4V6z"/></svg>
+          オープンチャットに参加する(dead link)
+        </a>
+      </div>
+      <div class="qr"><img alt="さいたま市議会を見守る会のQRコード"></div>
+    </article>
+
+    <article class="chapter">
+      <div class="badge" aria-hidden="true">川</div>
+      <div class="chapter-body">
+        <h2>川崎市議会を見守る会</h2>
+        <a class="join" href="https://line.me/ti/g2/DUMMY-kawasaki" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v9H8l-4 4V6z"/></svg>
+          オープンチャットに参加する(dead link)
+        </a>
+      </div>
+      <div class="qr"><img alt="川崎市議会を見守る会のQRコード"></div>
+    </article>
+
+    <article class="chapter">
+      <div class="badge" aria-hidden="true">目</div>
+      <div class="chapter-body">
+        <h2>目黒区議会を見守る会</h2>
+        <a class="join" href="https://line.me/ti/g2/DUMMY-meguro" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v9H8l-4 4V6z"/></svg>
+          オープンチャットに参加する(dead link)
+        </a>
+      </div>
+      <div class="qr"><img alt="目黒区議会を見守る会のQRコード"></div>
+    </article>
+
+    <article class="chapter">
+      <div class="badge" aria-hidden="true">杉</div>
+      <div class="chapter-body">
+        <h2>杉並区議会を見守る会</h2>
+        <a class="join" href="https://line.me/ti/g2/hIdmI86h2pmT0ciBjO7tIazBXbFbRT5PvGVOoQ" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v9H8l-4 4V6z"/></svg>
+          オープンチャットに参加する
+        </a>
+      </div>
+      <div class="qr"><img alt="杉並区議会を見守る会のQRコード"></div>
+    </article>
+
+    <article class="chapter">
+      <div class="badge" aria-hidden="true">江</div>
+      <div class="chapter-body">
+        <h2>江東区議会を見守る会</h2>
+        <a class="join" href="https://line.me/ti/g2/DUMMY-koto" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v9H8l-4 4V6z"/></svg>
+          オープンチャットに参加する(dead link)
+        </a>
+      </div>
+      <div class="qr"><img alt="江東区議会を見守る会のQRコード"></div>
+    </article>
+
+  </section>
+
+  <footer>
+    <p class="call">あなたの地域にはまだありませんか？最初のひとりになってみませんか。</p>
+    <p>「見守る会」は特定の政党や候補を支援するものではなく、区政・市政に関心を持つ人同士が気軽に情報交換するための場です。各グループはそれぞれ独立して運営されており、このページはそれらを紹介する非公式の案内です。</p>
+    <p class="note">※掲載しているリンクとQRコードは現在ダミーです。公開前に、各グループの <code>&lt;a class="join"&gt;</code> の href を実際のLINEオープンチャットURLに書き換えてください（QRコードは自動で連動します）。</p>
+  </footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.chapter').forEach(function(chapter){
+    var link = chapter.querySelector('.join');
+    var img = chapter.querySelector('.qr img');
+    if(!link || !img) return;
+    var url = link.getAttribute('href');
+    img.src = 'https://api.qrserver.com/v1/create-qr-code/?size=180x180&margin=8&color=1E2A3A&bgcolor=F7F1E4&data=' + encodeURIComponent(url);
+  });
+</script>
+
+</body>
+</html>

@@ -187,24 +187,66 @@
     margin-top: 48px;
   }
 
-  footer p{
+  .invite{
+    margin-bottom: 48px;
+  }
+
+  .invite p{
     font-size: 0.92rem;
     color: var(--ink-soft);
     max-width: 34em;
   }
 
-  footer .call{
+  .invite .call{
     font-family: 'Shippori Mincho B1', serif;
     font-weight: 600;
     font-size: 1.05rem;
     color: var(--ink);
   }
 
-  footer .note{
+  .invite .note{
     padding: 12px 16px;
     background: var(--paper-light);
     border-left: 3px solid var(--gold);
     font-size: 0.85rem;
+  }
+
+  /* ---- related ---- */
+
+  .related{
+    margin: 0;
+  }
+
+  .related h2{
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: 800;
+    font-size: 1rem;
+    margin: 0 0 12px;
+  }
+
+  .related ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .related li{
+    margin: 0 0 14px;
+  }
+
+  .related a{
+    font-weight: 700;
+    font-size: 0.92rem;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
+  .related .desc{
+    display: block;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
   }
 
   @media (max-width: 520px){
@@ -234,6 +276,12 @@
       2023年、文京区の区民有志が「政治の話をしにくい」という違和感をきっかけに、区議会の話題を気軽に話せるLINEのオープンチャット「文京区議会を見守る会」を立ち上げました。特定の政党や候補を支援せず、誹謗中傷を避けるという方針のもとで参加者が増え、2025年には民主主義大賞の市民部門優秀賞に選ばれています。同じような場をつくりたいという声を受け、各地の「見守る会」をこのページにまとめました。
     </p>
   </header>
+
+  <section class="invite">
+    <p class="call">あなたの地域にはまだありませんか？最初のひとりになってみませんか。</p>
+    <p>「見守る会」は特定の政党や候補を支援するものではなく、区政・市政に関心を持つ人同士が気軽に情報交換するための場です。各グループはそれぞれ独立して運営されており、このページはそれらを紹介する非公式の案内です。</p>
+    <p class="note">※一覧に掲載を希望する同様の趣旨のオープンチャットの管理人の方がいましたら<a href="https://x.com/angry_engineer0">行動するエンジニア</a>までメンションをつけてご連絡ください</p>
+  </section>
 
   <section class="chapters">
 
@@ -336,9 +384,19 @@
   </section>
 
   <footer>
-    <p class="call">あなたの地域にはまだありませんか？最初のひとりになってみませんか。</p>
-    <p>「見守る会」は特定の政党や候補を支援するものではなく、区政・市政に関心を持つ人同士が気軽に情報交換するための場です。各グループはそれぞれ独立して運営されており、このページはそれらを紹介する非公式の案内です。</p>
-    <p class="note">※一覧に掲載を希望する同様の趣旨のオープンチャットの管理人の方がいましたら<a href="https://x.com/angry_engineer0">行動するエンジニア</a>までメンションをつけてご連絡ください</p>
+    <nav class="related" aria-label="関連サイト">
+      <h2>関連サイト</h2>
+      <ul>
+        <li>
+          <a href="https://sunmoonstern.github.io/" target="_blank" rel="noopener">作者について</a>
+          <span class="desc">教育・医療データの情報公開・地域の政治。業務外で取り組んでいるプロジェクトを紹介。</span>
+        </li>
+        <li>
+          <a href="https://sunmoonstern.github.io/fun-games/" target="_blank" rel="noopener">まなびの あそびば</a>
+          <span class="desc">小学校低学年向けの無料学習ゲーム集。九九・英語・タイピング・プログラミングを、ブラウザで遊びながら学べます。</span>
+        </li>
+      </ul>
+    </nav>
   </footer>
 
 </div>

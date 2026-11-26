@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>共通ルールの雛形 | 見守る会ネットワーク</title>
+<meta name="description" content="各地の「議会を見守る会」のLINEオープンチャットで使える、共通ルールの雛形です。文京区議会を見守る会のルールをもとにしています。自治体名を入れてコピーし、適宜改変してお使いください。">
+<link rel="canonical" href="https://sunmoonstern.github.io/minamoru-network/rules/">
+<link rel="stylesheet" href="../guide.css">
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="../">← 見守る会ネットワーク</a>
+
+  <p class="kicker">共通ルールの雛形</p>
+  <h1>どのまちの「見守る会」でも使える<br>ルールのたたき台</h1>
+  <p class="lede">「文京区議会を見守る会」のルールをもとにしたたたき台です。自治体名を入れてそのままコピーできます。<b>自由に書き換えてください。</b>出典の表記も不要です。</p>
+
+  <div class="note"><b>ルールの採用自体が任意です。</b>ルールなしで運営している会もあります。「特定の党や人物に肩入れせず、是々非々でカジュアルに政治を語る」姿勢が伝われば、形は会ごとに違ってかまいません。</div>
+
+  <h2>自治体名を入れる</h2>
+  <div class="fill">
+    <label>自治体名
+      <input id="place" type="text" placeholder="例：杉並" autocomplete="off">
+    </label>
+    <label>区・市・町・村
+      <select id="kind">
+        <option>区</option>
+        <option>市</option>
+        <option>町</option>
+        <option>村</option>
+      </select>
+    </label>
+  </div>
+  <p class="soft">入力すると「〇〇区議会」「区民」「区政」などが置き換わります。</p>
+
+  <h2>ルール全文（ノートやアナウンス用）</h2>
+  <p class="soft">ノートに投稿してアナウンスに固定すると、新しい人の目にとまります。</p>
+
+  <div class="tpl">
+    <div class="tpl-bar"><span>ルール全文</span><button class="copy" type="button" data-target="full">コピー</button></div>
+<pre id="full">【〇〇区議会を見守る会 ルール】
+
+与野党関係なく、区民のために動いている議員（またはそうでない議員）の情報や、日ごろ疑問に思うこと、区政に関することを、ぼちぼちシェアしあう場です。
+管理人は、特定の政党・団体・個人を応援しているわけではない、ただの一区民です。
+
+■ この場について
+・区政についてざっくばらんに話し、情報を共有する場所です。
+・初めての方も参加しやすい、穏やかな雰囲気をみんなで心がけ、区政を見守る輪を広げていきましょう。
+
+■ 発言するときのお願い
+・ほかの人の意見を尊重し、敬意を持って発言しましょう。
+・事実に基づき、区民の利益のための発信であれば、議員の個人名や政党名を出してもかまいません。ただし誹謗中傷はやめましょう。
+・一方的な意見の押し付けや、過度な連投はご遠慮ください。
+
+■ 禁止事項
+・宗教の勧誘や、テーマと関係のない勧誘・宣伝
+・荒らし行為
+・不要な諍いを招く攻撃的な発言、ほかの人への敬意を欠く発言
+
+■ ルールに反した場合
+・目に余る書き込みは、管理人の判断で削除することがあります。
+・ルールに反した書き込みを続ける方には、管理人から警告します。改善が見られない場合は退会をお願いし、最終的には強制退会とします。
+
+このほか、LINEオープンチャットの利用規約・ガイドラインに則って運営します。</pre>
+  </div>
+
+  <h2>短いバージョン（説明欄用）</h2>
+  <p class="soft">説明欄に全文が入りきらないときに。</p>
+
+  <div class="tpl">
+    <div class="tpl-bar"><span>説明欄用</span><button class="copy" type="button" data-target="short">コピー</button></div>
+<pre id="short">与野党関係なく、区政についてぼちぼち話し、情報をシェアする場です。管理人は特定の政党・団体・個人を応援していない一区民です。お互いに敬意を持って発言しましょう。誹謗中傷・勧誘・荒らしはNGです。詳しいルールはノートをご覧ください。</pre>
+  </div>
+
+  <h2>書き換えるときのヒント</h2>
+
+  <h3>管理人の立場は、ありのままに</h3>
+  <p>文京区の会では「特定の団体・個人を応援していないただの一区民」「身内に区議会議員はいない」と書き添えています。立場がわかると参加者は安心できます。</p>
+
+  <h3>必要になったら足していく</h3>
+  <p>最初から完璧を目指さず、困ったことが起きたら「2024.2.13追加」のように日付をつけて足せば十分です。</p>
+
+  <h3>個人名・政党名の扱いは、はっきり書く</h3>
+  <p>名前を出してよいかは早めに決めておくと揉めにくくなります。雛形では「事実にもとづく住民のための発信ならOK、誹謗中傷はNG」としています。</p>
+
+  <h3>注意の段階を決めておく</h3>
+  <p>「削除 → 警告 → 退会のお願い → 強制退会」と書いておくと、対応に迷わず、公平にも見えます。</p>
+
+  <a class="next" href="../start/">
+    <b>立ち上げマニュアル →</b>
+    <span>新しく会を始めるための手順</span>
+  </a>
+
+  <footer>
+    <p>この雛形は「文京区議会を見守る会」のルールをもとに作成しました。</p>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var place = document.getElementById('place');
+  var kind = document.getElementById('kind');
+  var blocks = ['full','short'].map(function(id){
+    var el = document.getElementById(id);
+    return {el: el, src: el.textContent};
+  });
+
+  function render(){
+    var k = kind.value;
+    var name = place.value.trim().replace(/[区市町村]$/, '') || '〇〇';
+    blocks.forEach(function(b){
+      b.el.textContent = b.src
+        .replace(/〇〇区議会/g, name + k + '議会')
+        .replace(/区民/g, k + '民')
+        .replace(/区政/g, (place.value.trim() ? name + k : k) + '政');
+    });
+  }
+  place.addEventListener('input', render);
+  kind.addEventListener('change', render);
+
+  document.querySelectorAll('.copy').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var text = document.getElementById(btn.dataset.target).textContent;
+      var done = function(){
+        btn.textContent = 'コピーしました';
+        btn.setAttribute('data-done', '');
+        setTimeout(function(){ btn.textContent = 'コピー'; btn.removeAttribute('data-done'); }, 2000);
+      };
+      if(navigator.clipboard){
+        navigator.clipboard.writeText(text).then(done);
+      }else{
+        var ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta); ta.select();
+        document.execCommand('copy'); ta.remove(); done();
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

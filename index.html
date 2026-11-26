@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>見守る会ネットワーク | 地方議会を、みんなの目で</title>
-<meta name="description" content="各地の「区議会・市議会を見守る会」のLINEオープンチャットへのリンク集です。">
+<meta name="description" content="文京区・杉並区・目黒区・江東区・さいたま市・川崎市など、各地の「区議会・市議会を見守る会」のLINEオープンチャットをまとめた非公式のリンク集です。特定の政党や候補を支援せず、地域の議会について気軽に話せる場を紹介しています。">
 
 <!--
   ▼ メンテナンス用メモ（公開前に必ず確認してください）▼
@@ -211,6 +211,37 @@
     font-size: 0.85rem;
   }
 
+  .guides{
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+  }
+
+  .guides li{
+    padding: 14px 18px;
+    background: var(--paper-light);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+  }
+
+  .guides a{
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: 800;
+    font-size: 1rem;
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
+  .guides .desc{
+    display: block;
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+
   /* ---- related ---- */
 
   .related{
@@ -273,14 +304,18 @@
     <p class="subhead">地方議会を、みんなの目で。</p>
 
     <p class="lede">
-      2023年、文京区の区民有志が「政治の話をしにくい」という違和感をきっかけに、区議会の話題を気軽に話せるLINEのオープンチャット「文京区議会を見守る会」を立ち上げました。特定の政党や候補を支援せず、誹謗中傷を避けるという方針のもとで参加者が増え、2025年には民主主義大賞の市民部門優秀賞に選ばれています。同じような場をつくりたいという声を受け、各地の「見守る会」をこのページにまとめました。
+      2023年、文京区の区民有志が、区議会の話題を気軽に話せるLINEオープンチャット「文京区議会を見守る会」を始めました。2025年には民主主義大賞 市民部門優秀賞を受賞。同じような場が各地に広がっています。
     </p>
   </header>
 
   <section class="invite">
     <p class="call">あなたの地域にはまだありませんか？最初のひとりになってみませんか。</p>
-    <p>「見守る会」は特定の政党や候補を支援するものではなく、区政・市政に関心を持つ人同士が気軽に情報交換するための場です。各グループはそれぞれ独立して運営されており、このページはそれらを紹介する非公式の案内です。</p>
-    <p class="note">※一覧に掲載を希望する同様の趣旨のオープンチャットの管理人の方がいましたら<a href="https://x.com/angry_engineer0">行動するエンジニア</a>までメンションをつけてご連絡ください</p>
+    <p>特定の政党や候補を支援せず、地域の政治を気軽に話すための場です。各会は独立して運営されており、このページは非公式の案内です。</p>
+    <ul class="guides">
+      <li><a href="start/">立ち上げマニュアル</a><span class="desc">新しく会を始めるための手順</span></li>
+      <li><a href="rules/">共通ルールの雛形</a><span class="desc">コピーして使えるたたき台。ルールを設けるかどうかも自由です</span></li>
+    </ul>
+    <p class="note">※掲載を希望する管理人の方は、<a href="https://x.com/angry_engineer0">行動するエンジニア</a>までXでメンションしてください。</p>
   </section>
 
   <section class="chapters">
@@ -389,15 +424,15 @@
       <ul>
         <li>
           <a href="https://sunmoonstern.github.io/" target="_blank" rel="noopener">作者について</a>
-          <span class="desc">教育・医療データの情報公開・地域の政治。業務外で取り組んでいるプロジェクトを紹介。</span>
+          <span class="desc">業務外で取り組んでいるプロジェクトの紹介</span>
         </li>
         <li>
           <a href="https://sunmoonstern.github.io/fun-games/" target="_blank" rel="noopener">まなびの あそびば</a>
-          <span class="desc">小学校低学年向けの無料学習ゲーム集。九九・英語・タイピング・プログラミングを、ブラウザで遊びながら学べます。</span>
+          <span class="desc">小学校低学年向けの無料学習ゲーム集</span>
         </li>
         <li>
           <a href="https://github.com/sunmoonStern/minamoru-network" target="_blank" rel="noopener">GitHub リポジトリ</a>
-          <span class="desc">このページのソースコードです。PRやissue作成大歓迎です。</span>
+          <span class="desc">このページのソースコード。PR・issue歓迎です</span>
         </li>
       </ul>
     </nav>
